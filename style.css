@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero {
+    display: flex;
+    background-color: #1f2937;
+    color:f9faf8;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+    padding: 100px;
+
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 100px;
+    gap: 60px;
+}
+
+.about-text {
+    width:400px;
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+
+}
+
+
+
+h1 {
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
+}
