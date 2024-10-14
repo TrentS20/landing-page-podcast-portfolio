@@ -8,6 +8,7 @@ body {
     font-family:'Courier New', Courier, monospace;
     flex-direction: column;
     min-height: 100vh;
+    /* ?? I'd like to use the font family Roboto. I downlaoded it to my computer but can;t get Vscode to recognie it. */
 }
 
 main {
@@ -51,63 +52,108 @@ main {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 100px 0px;
+    padding: 100px 10px;
 }
 
 .hero-left {
-    width: fit-content;
+    width: 600px;
     line-height: 2;
 }
 
 .hero img {
-    border-radius: 2px;
-    border-color: #e5e7eb;
+    border-radius: 10px;
+    border-color: #3882f6;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.hero-left button {
+    margin-top: 20px;
 }
 
 /* Projects Section ---------- */
 
-
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
 
 .projects-container {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
-  
-
-
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* ?? ^^^^I want to apply an even gap between cards, why doesn't the gap funciton work here? */
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 350px;
-    padding: 20px 10px;
-    border-radius: 2px;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2)
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border-color: #3882f6;
+    border-width: 3px;
+    border-style: solid;
+}
 
+.card img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border-color: #3882f6;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.card img:hover {
+
+}
+
+.projects p {
+    text-align: center;
+    padding: 20px 30px;
+    color: #1f2937;
+}
+
+.project-header {
+    text-align: center;
+    padding-top:  80px;
+}
+
+.card:hover {
+    background-color:#3882f6; opacity: .9;
 }
 
 
 /* About Section ------------------ */
 
-
 .about {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #e5e7eb;
-    padding: 100px;
+    padding: 100px 300px;
     gap: 150px;
     width:fit-content;
 }
 
-.about-text {
-   
+.about p {
+
     font-style: italic;
     font-size: 36px;
+    font-weight: 100;
     color: #1f2937;
+}
+
+.about img {
+    border-radius: 10px;
+    border-color: #3882f6;
+    border-style: solid;
+    border-width: 3px;
 }
 
 
@@ -119,18 +165,40 @@ main {
     align-items: center;
     justify-content: center;
     padding: 100px;
-    
 
 }
+
+/* ?? struggling with cta button and container positioning. i want the text inside blue container to wrap, but seems like button is being squished.  */
 
 .CTA-container {
     display: flex;
-    flex-wrap: wrap;
-    height: 150px;
-    width: 1200px;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    max-width: 1500px;
     background-color: #3882f6;
     border-radius: 10px;
+    padding: 40px 100px 40px 100px;
 }
+
+.CTA-left {
+    display: flex;
+    flex-flow: wrap;
+    line-height: 3;
+}
+
+.CTA-left h3, p {
+    color: #f9faf8;
+}
+
+.CTA-container button {
+    border-color: #f9faf8;
+    margin-left: 200px;
+    border-color: #f9faf8;
+    border-width: 2px;
+}
+
+/* footer ----------- */
 
 .footer {
     display: flex;
@@ -142,7 +210,7 @@ main {
 
 }
 
-/* Style and fonts CSS */
+/* General style and fonts CSS */
 
 h1 {
     color: #f9faf8;
@@ -151,30 +219,26 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
-    padding-top: 100px;
 }
 
 p {
     line-height: 1.5;
+    font-size: 18px;
 }
 
 button {
     background-color: #3882f6;
+    text-align: center;
     width: 150px;
     height: 50px;
-    padding: 5px;
+    padding: 10px;
     color: #f9faf8;
     border-radius: 5px;
-    font-size: 24px; 
-    margin-top: 20px;
+    font-size: 24px;  
 }
 
-.projects p {
-    text-align: center;
-    padding: 20px;
-   
-}
+button:hover {
+    background-color: #1f2937;
