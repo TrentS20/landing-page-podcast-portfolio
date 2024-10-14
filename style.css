@@ -11,14 +11,25 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     background-color: #1f2937;
+    padding: ;
     
 }
 
 .nav {
+    
+}
+
+ul {
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
+    list-style-type: none;
+    margin-right: 40px;
+    padding: 10px;
+    font-size: 18px;
+    color:#e5e7eb;
 }
 
 .hero {
