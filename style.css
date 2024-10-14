@@ -5,24 +5,28 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
-    
+    font-family:'Courier New', Courier, monospace;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+main {
+    flex: 1;
+}
+
+/* Header Section ------------*/
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #1f2937;
-    padding: ;
+    padding: 20px 10px;
+    gap: 900px;
     
 }
 
-.nav {
-    
-}
-
-ul {
+.nav ul {
     display: flex;
     gap: 20px;
     list-style-type: none;
@@ -32,56 +36,145 @@ ul {
     color:#e5e7eb;
 }
 
+
+/* Main -------------- */
+
+
+
+/* Hero Section ------------------- */
+
 .hero {
     display: flex;
     background-color: #1f2937;
-    color:f9faf8;
+    color:#f9faf8;
     font-weight: 900;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0px;
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+.hero-left {
+    width: fit-content;
+    line-height: 2;
+}
+
+.hero img {
+    border-radius: 2px;
+    border-color: #e5e7eb;
+}
+
+/* Projects Section ---------- */
+
+
+
+.projects-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+  
 
 
 }
 
 .card {
-    width: 300px;
-    text-align: center;
-    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 20px 10px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2)
 
 }
+
+
+/* About Section ------------------ */
+
 
 .about {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-color: #e5e7eb;
     padding: 100px;
-    gap: 60px;
+    gap: 150px;
+    width:fit-content;
 }
 
 .about-text {
-    width:400px;
+   
     font-style: italic;
     font-size: 36px;
     color: #1f2937;
-    font-weight: 
+}
+
+
+/* CTA Section ---------------- */
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    
+
+}
+
+.CTA-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 1200px;
+    background-color: #3882f6;
+    border-radius: 10px;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #1f2937;
+    color: #f9faf8;
+    padding: 20px;
 
 }
 
-
+/* Style and fonts CSS */
 
 h1 {
     color: #f9faf8;
     font-weight: 900;
     font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    padding-top: 100px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+button {
+    background-color: #3882f6;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    color: #f9faf8;
+    border-radius: 5px;
+    font-size: 24px; 
+    margin-top: 20px;
+}
+
+.projects p {
+    text-align: center;
+    padding: 20px;
+   
 }
