@@ -82,7 +82,8 @@ main {
     display: flex;
     justify-content: center;
     gap: 10px;
-    /* ?? ^^^^I want to apply an even gap between cards, why doesn't the gap funciton work here? */
+    flex-wrap: wrap;
+    
 }
 
 .card {
