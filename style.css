@@ -5,10 +5,9 @@
 }
 
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Roboto", sans-serif;
     flex-direction: column;
     min-height: 100vh;
-    /* ?? I'd like to use the font family Roboto. I downlaoded it to my computer but can;t get Vscode to recognie it. */
 }
 
 main {
@@ -24,7 +23,6 @@ main {
     background-color: #1f2937;
     padding: 20px 10px;
     gap: 900px;
-    
 }
 
 .nav ul {
@@ -242,3 +240,4 @@ button {
 
 button:hover {
     background-color: #1f2937;
+}
